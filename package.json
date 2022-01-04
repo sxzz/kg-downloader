@@ -1,0 +1,37 @@
+{
+  "name": "kg-downloader",
+  "version": "1.0.0",
+  "description": "全民 K 歌下载器",
+  "keywords": [
+    "kg",
+    "downloader"
+  ],
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxzz/kg-downloader.git"
+  },
+  "author": "三咲智子 <sxzz@sxzz.moe>",
+  "scripts": {
+    "test": "vitest"
+  },
+  "bugs": {
+    "url": "https://github.com/sxzz/kg-downloader/issues"
+  },
+  "homepage": "https://github.com/sxzz/kg-downloader#readme",
+  "dependencies": {
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config-prettier": "^1.6.1",
+    "@sxzz/eslint-config-ts": "^1.6.2",
+    "@types/node": "*",
+    "commander": "^8.3.0",
+    "eslint": "^8.6.0",
+    "eslint-define-config": "^1.2.1",
+    "esno": "^0.13.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.10",
+    "vitest": "^0.0.131"
+  }
+}
