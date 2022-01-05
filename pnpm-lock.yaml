@@ -11,7 +11,7 @@ specifiers:
   node-fetch: ^3.1.0
   typescript: ^4.5.4
   vite: ^2.7.10
-  vitest: ^0.0.131
+  vitest: ^0.0.133
 
 dependencies:
   node-fetch: 3.1.0
@@ -26,7 +26,7 @@ devDependencies:
   esno: 0.13.0_typescript@4.5.4
   typescript: 4.5.4
   vite: 2.7.10
-  vitest: 0.0.131
+  vitest: 0.0.133
 
 packages:
 
@@ -609,7 +609,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001296
-      electron-to-chromium: 1.4.34
+      electron-to-chromium: 1.4.35
       escalade: 3.1.1
       node-releases: 2.0.1
       picocolors: 1.0.0
@@ -826,8 +826,8 @@ packages:
       domhandler: 4.3.0
     dev: true
 
-  /electron-to-chromium/1.4.34:
-    resolution: {integrity: sha512-B7g6Y9No9XMYk1VNrQ8KAmSEo1Iltrz/5EjOGxl1DffQAb3z/XbpHRCfYKwV8D+CPXm4Q7Xg1sceSt9osNwRIA==}
+  /electron-to-chromium/1.4.35:
+    resolution: {integrity: sha512-wzTOMh6HGFWeALMI3bif0mzgRrVGyP1BdFRx7IvWukFrSC5QVQELENuy+Fm2dCrAdQH9T3nuqr07n94nPDFBWA==}
     dev: true
 
   /enquirer/2.3.6:
@@ -2644,8 +2644,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.0.131:
-    resolution: {integrity: sha512-8az+/FUECnJTVsJxNJ6RHcy0FqWSlLlUq7prlz74OIWV6Lhh8zrjH2P+7J5uv0HLVgz92NMvWTPGQWk+90tXJQ==}
+  /vitest/0.0.133:
+    resolution: {integrity: sha512-x83CeRPW1FNTY1pQ8CTPH4dbyvZc67ycqnqYpU/xxg6snnAcB25GRZh39RyOeMVHEczB2SeGcA/fzP1D8eUvzw==}
     engines: {node: '>=14.14.0'}
     hasBin: true
     peerDependencies:
