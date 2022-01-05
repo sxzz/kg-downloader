@@ -13,7 +13,8 @@
   },
   "author": "三咲智子 <sxzz@sxzz.moe>",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "dev": "esno src/cli.ts"
   },
   "bugs": {
     "url": "https://github.com/sxzz/kg-downloader/issues"

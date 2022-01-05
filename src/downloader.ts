@@ -20,6 +20,7 @@ export const downloadSong = async (shareId: string, outputPath: string) => {
     return
   }
 
+  console.info(`正在下载 ${info.detail.nick} 的《${info.detail.song_name}》...`)
   const data = await fetch(url, {
     method: 'GET',
   }).then((res) => res.arrayBuffer())
@@ -29,4 +30,12 @@ export const downloadSong = async (shareId: string, outputPath: string) => {
   }.mp3`
   const dest = path.resolve(outputPath, filename)
   await writeFile(dest, Buffer.from(data))
+}
+
+export const getUserInfo = async (uid: string) => {
+  const url = `https://node.kg.qq.com/personal?uid=${uid}`
+  const text = await fetch(url).then((r) => r.text())
+  const regex = /window\.__DATA__ = (.*?); <\/script>/
+  const m = regex.exec(text)
+  return JSON.parse(m[1])
 }

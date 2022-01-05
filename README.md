@@ -7,6 +7,8 @@
 - [ ] wget / Aria2c
 - [ ] Deno
 - [ ] Download all songs by user
+  - [x] Web (unable to get all songs)
+  - [ ] Other protocol
 - [ ] Serverless (Vercel)
 
 ## Credits
