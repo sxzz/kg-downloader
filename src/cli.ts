@@ -2,7 +2,6 @@ import process from 'process'
 import { program } from 'commander'
 import { version } from '../package.json'
 import { downloadSong, getUserInfo } from './downloader'
-import './node-shim'
 
 program.version(version)
 

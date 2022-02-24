@@ -13,16 +13,14 @@
   },
   "author": "三咲智子 <sxzz@sxzz.moe>",
   "scripts": {
-    "test": "vitest",
-    "dev": "esno src/cli.ts"
+    "test": "NODE_OPTIONS=\"--experimental-fetch\" vitest",
+    "dev": "NODE_OPTIONS=\"--experimental-fetch\" esno src/cli.ts"
   },
   "bugs": {
     "url": "https://github.com/sxzz/kg-downloader/issues"
   },
   "homepage": "https://github.com/sxzz/kg-downloader#readme",
-  "dependencies": {
-    "node-fetch": "^3.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@sxzz/eslint-config-prettier": "^1.6.1",
     "@sxzz/eslint-config-ts": "^1.6.2",
@@ -34,5 +32,8 @@
     "typescript": "^4.5.4",
     "vite": "^2.7.10",
     "vitest": "^0.0.133"
+  },
+  "engines": {
+    "node": ">=v17.6.0"
   }
 }

@@ -1,5 +1,7 @@
 # kg-downloader
 
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+
 全民 K 歌下载器
 
 ## TODO
