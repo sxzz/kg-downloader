@@ -2,6 +2,7 @@
   "name": "kg-downloader",
   "version": "1.0.0",
   "description": "全民 K 歌下载器",
+  "packageManager": "pnpm@6.32.3",
   "keywords": [
     "kg",
     "downloader"
@@ -34,5 +35,8 @@
   },
   "engines": {
     "node": ">=v17.6.0"
+  },
+  "volta": {
+    "node": "17.7.1"
   }
 }
