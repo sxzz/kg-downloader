@@ -1,5 +1,5 @@
-import { it, expect, describe } from 'vitest'
-import { getSongInfo, downloadSong } from '../src'
+import { describe, expect, it } from 'vitest'
+import { downloadSong, getSongInfo } from '../src'
 
 describe('downloader should work', () => {
   it('getSongInfo should work', async () => {
