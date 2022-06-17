@@ -1,6 +1,6 @@
 {
   "name": "kg-downloader",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "packageManager": "pnpm@6.32.3",
   "description": "全民 K 歌下载器",
   "type": "module",
