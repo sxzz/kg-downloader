@@ -1,6 +1,6 @@
 {
   "name": "kg-downloader",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "全民 K 歌下载器",
   "packageManager": "pnpm@6.32.3",
   "keywords": [
@@ -20,7 +20,7 @@
   "scripts": {
     "test": "vitest",
     "build": "tsup",
-    "dev": "esno src/cli.ts",
+    "dev": "tsx src/cli.ts",
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
   },
@@ -38,8 +38,8 @@
     "bumpp": "^8.2.0",
     "eslint": "^8.17.0",
     "eslint-define-config": "^1.5.1",
-    "esno": "^0.16.3",
     "tsup": "^6.1.2",
+    "tsx": "^3.4.3",
     "typescript": "^4.7.3",
     "vite": "^2.9.12",
     "vitest": "^0.15.1"
