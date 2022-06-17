@@ -14,8 +14,8 @@
   },
   "author": "三咲智子 <sxzz@sxzz.moe>",
   "scripts": {
-    "test": "NODE_OPTIONS=\"--experimental-fetch\" vitest",
-    "dev": "NODE_OPTIONS=\"--experimental-fetch\" esno src/cli.ts"
+    "test": "vitest",
+    "dev": "esno src/cli.ts"
   },
   "bugs": {
     "url": "https://github.com/sxzz/kg-downloader/issues"
@@ -34,6 +34,6 @@
     "vitest": "^0.15.1"
   },
   "engines": {
-    "node": ">=v17.6.0"
+    "node": ">=v18"
   }
 }
