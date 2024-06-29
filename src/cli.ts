@@ -1,4 +1,4 @@
-import process from 'process'
+import process from 'node:process'
 import { program } from 'commander'
 import { version } from '../package.json'
 import { downloadSong, getUserInfo } from './downloader'
@@ -21,7 +21,7 @@ program
     const tasks: Promise<void>[] = []
     for (const song of songs) {
       tasks.push(
-        downloadSong(song.shareid, options.outputPath || process.cwd())
+        downloadSong(song.shareid, options.outputPath || process.cwd()),
       )
     }
     await Promise.all(tasks)

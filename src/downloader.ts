@@ -1,8 +1,9 @@
-import { writeFile } from 'fs/promises'
-import path from 'path'
+import { writeFile } from 'node:fs/promises'
+import { Buffer } from 'node:buffer'
+import path from 'node:path'
 
 export const filterNick = (nick: string) =>
-  nick.replace(/\[em](.*?)\[\/em]/g, '').replace(/["*/:<>?\\|]/g, '')
+  nick.replaceAll(/\[em](.*?)\[\/em]/g, '').replaceAll(/["*/:<>?\\|]/g, '')
 
 export const getSongInfo = async (shareId: string) => {
   const url = `https://node.kg.qq.com/play?s=${shareId}`
