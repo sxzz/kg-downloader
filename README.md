@@ -10,4 +10,4 @@
 
 ## License
 
-[AGPL-3.0](./LICENSE) License © 2022 [三咲智子](https://github.com/sxzz)
+[AGPL-3.0](./LICENSE) License © 2022-2024 [三咲智子](https://github.com/sxzz)
