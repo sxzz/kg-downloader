@@ -25,6 +25,13 @@
   "bin": {
     "kg-download": "./bin/kg-download.js"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "test": "vitest",
     "lint": "eslint .",
