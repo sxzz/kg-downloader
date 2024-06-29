@@ -18,19 +18,20 @@
     "url": "git+https://github.com/sxzz/kg-downloader.git"
   },
   "author": "三咲智子 <sxzz@sxzz.moe>",
+  "funding": "https://github.com/sponsors/sxzz",
   "files": [
     "bin",
     "dist"
   ],
-  "bin": {
-    "kg-download": "./bin/kg-download.js"
-  },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json"
+  },
+  "bin": {
+    "kg-download": "./bin/kg-download.js"
   },
   "scripts": {
     "test": "vitest",
