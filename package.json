@@ -42,7 +42,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "commander": "^12.1.0"
+    "cac": "^6.7.14"
   },
   "devDependencies": {
     "@sxzz/eslint-config": "^3.0.0",

@@ -1,20 +1,24 @@
 import process from 'node:process'
-import { program } from 'commander'
+import { cac } from 'cac'
 import { version } from '../package.json'
 import { downloadSong, getUserInfo } from './downloader'
 
-program.version(version)
+const cli = cac('kg-download')
 
-program
+cli
   .command('song <shareId>')
-  .option('-o, --outputPath <path>', 'Set output path', process.cwd())
+  .option('-o, --outputPath <path>', 'Set output path', {
+    default: process.cwd(),
+  })
   .action(async (shareId: string, options: { outputPath: string }) => {
     await downloadSong(shareId, options.outputPath)
   })
 
-program
+cli
   .command('user <uid>')
-  .option('-o, --outputPath <path>', 'Set output path', process.cwd())
+  .option('-o, --outputPath <path>', 'Set output path', {
+    default: process.cwd(),
+  })
   .action(async (uid: string, options: { outputPath: string }) => {
     const user = await getUserInfo(uid)
     const songs: Record<string, any>[] = user.data.ugclist
@@ -26,4 +30,12 @@ program
     }
     await Promise.all(tasks)
   })
-program.parse(process.argv)
+
+cli.version(version)
+cli.help()
+cli.parse(process.argv)
+
+if (!cli.matchedCommand) {
+  cli.outputHelp()
+  process.exit(1)
+}
