@@ -7,11 +7,11 @@ describe('downloader should work', () => {
   const dirname = path.dirname(fileURLToPath(import.meta.url))
 
   it('getSongInfo should work', async () => {
-    const info = await getSongInfo('YFq3ycYfBeVVPYji')
+    const info = await getSongInfo('QPb91EQ2PaqBLQRc')
     expect(info).toBeTruthy()
   })
 
   it('downloadSong should work', async () => {
-    await downloadSong('YFq3ycYfBeVVPYji', path.resolve(dirname, 'temp'))
+    await downloadSong('QPb91EQ2PaqBLQRc', path.resolve(dirname, 'temp'))
   })
 })

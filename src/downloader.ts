@@ -26,8 +26,7 @@ export async function downloadSong(
   const info = await getSongInfo(shareId)
   const url = info.detail.playurl
   if (!url) {
-    console.error(`歌曲不存在！`)
-    return
+    throw new Error('Failed to extract song url')
   }
 
   console.info(`正在下载 ${info.detail.nick} 的《${info.detail.song_name}》...`)
