@@ -5,6 +5,11 @@ import { downloadSong, getUserInfo } from './downloader'
 
 const cli = cac('kg-download')
 
+cli.command('').action(() => {
+  cli.outputHelp()
+  process.exit(1)
+})
+
 cli
   .command('song <shareId>')
   .option('-o, --outputPath <path>', 'Set output path', {
@@ -31,11 +36,4 @@ cli
     await Promise.all(tasks)
   })
 
-cli.version(version)
-cli.help()
-cli.parse(process.argv)
-
-if (!cli.matchedCommand) {
-  cli.outputHelp()
-  process.exit(1)
-}
+cli.version(version).help().parse(process.argv)

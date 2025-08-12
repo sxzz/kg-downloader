@@ -28,6 +28,8 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
+    "./cli": "./dist/cli.js",
+    "./downloader": "./dist/downloader.js",
     "./package.json": "./package.json"
   },
   "bin": {
@@ -36,7 +38,7 @@
   "scripts": {
     "test": "vitest",
     "lint": "eslint --cache .",
-    "build": "tsup",
+    "build": "tsdown",
     "dev": "tsx src/cli.ts",
     "typecheck": "tsc --noEmit",
     "release": "bumpp && pnpm publish",
@@ -52,7 +54,7 @@
     "bumpp": "^10.2.3",
     "eslint": "^9.33.0",
     "prettier": "^3.6.2",
-    "tsup": "^8.5.0",
+    "tsdown": "^0.14.1",
     "tsx": "^4.20.4",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
