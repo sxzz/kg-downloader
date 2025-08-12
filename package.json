@@ -35,7 +35,7 @@
   },
   "scripts": {
     "test": "vitest",
-    "lint": "eslint .",
+    "lint": "eslint --cache .",
     "build": "tsup",
     "dev": "tsx src/cli.ts",
     "typecheck": "tsc --noEmit",
